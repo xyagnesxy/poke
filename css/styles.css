@@ -1,0 +1,30 @@
+.tela-luta{
+    background-image: url('../images/campo-grama-700.jpg');
+    width: 700px;
+    height: 354px;
+    border: solid;
+}
+
+#pokemon{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 150px;
+    border: solid;
+    height: 250px;
+    width: 250px;
+
+    background-image: url('../images/bulbassaur.png');
+}
+
+#pokemon2{
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-left: 380px;
+    margin-top: 10px;
+    border: solid;
+    height: 250px;
+    width: 250px;
+
+    background-image: url('../images/bulbassaur.png');
+}
