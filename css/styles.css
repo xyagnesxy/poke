@@ -28,3 +28,33 @@
 
     background-image: url('../images/bulbassaur.png');
 }
+
+#barra{
+    background-image: url('../images/barra.png');
+    position: absolute;
+    height: 100px;
+    width: 300px;
+    margin-top: 300px;
+    margin-left: 150px;
+    opacity: 80%;
+}
+
+@keyframes balanco {
+
+    0%{
+        top: 0;
+    }
+    50%{
+        top: 5px;
+    }
+    100%{
+        top: 0;
+    }
+
+
+  }
+  
+  .balanco {
+    animation: balanco 1s ease-in-out infinite;
+  }
+  
