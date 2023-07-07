@@ -36,7 +36,23 @@
     width: 300px;
     margin-top: 300px;
     margin-left: 150px;
-    opacity: 80%;
+    /*opacity: 80%;*/
+}
+#atk{
+    position: absolute;
+    left: 60px;
+    top: 30px;
+    height: 50px;
+    width: 50px;
+    background-image: url('../images/atk-50.png');
+}
+#def{
+    position: absolute;
+    left: 140px;
+    top: 30px;
+    height: 50px;
+    width: 50px;
+    background-image: url('../images/shield-50.png');
 }
 
 @keyframes balanco {
