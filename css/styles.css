@@ -13,20 +13,20 @@
     height: 250px;
     width: 250px;
 
-    background-image: url('../images/bulbassaur.png');
+    background-image: url('../images/charmander.png');
 }
 
 #pokemon2{
-    background-size: 200px 200px;
+    background-size: 180px 180px;
     background-repeat: no-repeat;
     position: absolute;
-    margin-left: 380px;
+    margin-left: 400px;
     margin-top: 10px;
     border: solid;
     height: 250px;
     width: 250px;
 
-    background-image: url('../images/bulbassaur.png');
+    background-image: url('../images/bulbasaur.png');
 }
 
 #barra{
@@ -55,6 +55,6 @@
   }
   
   .balanco {
-    animation: balanco 1s ease-in-out infinite;
+    animation: balanco 1s infinite;
   }
   

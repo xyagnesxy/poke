@@ -1,5 +1,5 @@
 {
-    "bulbassaur":{
+    "bulbasaur":{
         "hp": "45",
         "attack": "49",
         "defense": "49",
@@ -23,5 +23,6 @@
         "type": "water",
         "img": "/images/squirtle.png"
     }
+    
 
 }
