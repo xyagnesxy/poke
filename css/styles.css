@@ -12,8 +12,8 @@
     border: solid;
     height: 250px;
     width: 250px;
-
-    background-image: url('../images/charmander.png');
+    
+    /*background-image: url('../images/charmander.png');*/
 }
 
 #pokemon2{
@@ -25,7 +25,6 @@
     border: solid;
     height: 250px;
     width: 250px;
-
     background-image: url('../images/bulbasaur.png');
 }
 

@@ -32,20 +32,29 @@ async function lutar(pok1, pok2, atributo){
 }
 
 
-function draw(div, pokemon){
+function draw(lugar, pokemon){
+    //lugar: pokemon ou pokemon2 será o id da div
+    //pokemon: nome do pokemon a ser desenhado
+    //cria uma div com id=lugar e backgorund-image=~pokemon
+
+    if(document.getElementById(lugar)){//verifica se já tem uma div lá
+        document.querySelector('.tela-luta').removeChild(document.getElementById(lugar))
+    }
+
+
+    var pok1 = document.createElement('div')
+    pok1.id = lugar
+    let url = "'../images/"+pokemon+".png'"
     
-    let pok1 = document.createElement('div')
-    let id = document.createAttributeNode('id')
-    pok1.setAttribute(id)
-    console.log(pok1)
-
-
+    pok1.style.backgroundImage = "url("+url+")"
+    document.querySelector('.tela-luta').appendChild(pok1)
+    
     
 }
 
-btnAtk.addEventListener('click',()=>{
-    lutar('bulbasaur', 'charmander', 'attack')
-})
+//btnAtk.addEventListener('click',()=>{
+ //   lutar('bulbasaur', 'charmander', 'attack')
+//})
 
 
 
