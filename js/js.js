@@ -1,25 +1,13 @@
-btnAtk = document.getElementById('atk')
-btnDef = document.getElementById('def')
+const btnAtk = document.getElementById('atk')
+const btnDef = document.getElementById('def')
+import lista from '../lista.js'
+const pokemons = lista['pokemons']
+var player1, player2
 
-async function pokemons(){
-    const url = "../pokemons.json"
-    const request = new Request(url)
-    const resposta =  await fetch(request)
+function lutar(pok1, pok2, atributo){
     
-    const lista =  await resposta.json()
-    console.log(lista)
-    return await lista//retorna uma promisse e não a lista
-}
-
-
-async function lutar(pok1, pok2, atributo){
-    const url = "../pokemons.json"
-    const request = new Request(url)
-    const resposta =  await fetch(request)
-    
-    const lista =  await resposta.json()
-  
-    if(lista[pok1][atributo]>lista[pok2][atributo]){
+  try{
+    if(player1[atributo]>player2[atributo]){
         console.log("pok1 ganha")
         return 1
        
@@ -28,9 +16,11 @@ async function lutar(pok1, pok2, atributo){
         return 2
   
     }
-
+  }
+  catch{
+    console.log('erro na função lutar')
+  }
 }
-
 
 function draw(lugar, pokemon){
     //lugar: pokemon ou pokemon2 será o id da div
@@ -40,26 +30,33 @@ function draw(lugar, pokemon){
     if(document.getElementById(lugar)){//verifica se já tem uma div lá
         document.querySelector('.tela-luta').removeChild(document.getElementById(lugar))
     }
+    if(lugar=='pokemon'){
+        player1 = pokemons[pokemon]
+    }else{
+        player2 = pokemons[pokemon]
+    }
 
 
-    var pok1 = document.createElement('div')
+    let pok1 = document.createElement('div')
     pok1.id = lugar
-    let url = "'../images/"+pokemon+".png'"
+    let url = pokemons[pokemon]['img']
     
     pok1.style.backgroundImage = "url("+url+")"
     document.querySelector('.tela-luta').appendChild(pok1)
     
     
+    
 }
+draw('pokemon', 'bulbasaur')
 
-//btnAtk.addEventListener('click',()=>{
- //   lutar('bulbasaur', 'charmander', 'attack')
-//})
+btnAtk.addEventListener('click',()=>{
+    
+    lutar(player1, player2, 'attack')
+})
 
 
 
-
+//console.log(lista)
 
 //console.log(lutar('bulbasaur', 'charmander', 'attack'))
 
-draw('pokemon', 'bulbasaur')

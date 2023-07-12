@@ -12,8 +12,6 @@
     border: solid;
     height: 250px;
     width: 250px;
-    
-    /*background-image: url('../images/charmander.png');*/
 }
 
 #pokemon2{
@@ -30,12 +28,14 @@
 
 #barra{
     background-image: url('../images/barra.png');
+    
     position: absolute;
-    height: 100px;
+    height: 120px;
     width: 300px;
     margin-top: 300px;
     margin-left: 150px;
     /*opacity: 80%;*/
+    /*z-index: 0;*/
 }
 #atk{
     position: absolute;
