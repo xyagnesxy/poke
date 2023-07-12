@@ -47,16 +47,16 @@ function draw(lugar, pokemon){
     
     
 }
-draw('pokemon', 'bulbasaur')
+
 
 btnAtk.addEventListener('click',()=>{
     
-    lutar(player1, player2, 'attack')
+    lutar(player1, player2, 'atk')
+})
+btnDef.addEventListener('click', ()=>{
+    lutar(player1, player2, 'def')
 })
 
 
 
-//console.log(lista)
-
-//console.log(lutar('bulbasaur', 'charmander', 'attack'))
-
+draw('pokemon', 'bulbasaur')

@@ -7,23 +7,24 @@
 
 #pokemon{
     position: absolute;
-    margin-left: 30px;
-    margin-top: 150px;
+    left: 30px;
+    top: 150px;
     border: solid;
     height: 250px;
     width: 250px;
+    background-position: center, center;
 }
 
 #pokemon2{
     background-size: 180px 180px;
     background-repeat: no-repeat;
     position: absolute;
-    margin-left: 400px;
+    left: 400px;
     margin-top: 10px;
     border: solid;
     height: 250px;
     width: 250px;
-    background-image: url('../images/bulbasaur.png');
+    background-position: center, center;
 }
 
 #barra{
@@ -34,8 +35,8 @@
     width: 300px;
     margin-top: 300px;
     margin-left: 150px;
-    /*opacity: 80%;*/
-    /*z-index: 0;*/
+    opacity: 80%;
+    z-index: 1;
 }
 #atk{
     position: absolute;
