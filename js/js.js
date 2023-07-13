@@ -41,7 +41,7 @@ function draw(lugar, pokemon){
     pok1.id = lugar
     let url = pokemons[pokemon]['img']
     
-    pok1.style.backgroundImage = "url("+url+")"
+    pok1.style.backgroundImage = "url(../images/bulbasaur.png)"
     document.querySelector('.tela-luta').appendChild(pok1)
     
     
@@ -60,3 +60,4 @@ btnDef.addEventListener('click', ()=>{
 
 
 draw('pokemon', 'bulbasaur')
+draw('pokemon2', 'bulbasaur')
