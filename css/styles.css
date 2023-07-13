@@ -1,11 +1,11 @@
-.tela-luta{
+.tela-luta {
     background-image: url('../images/campo-grama-700.jpg');
     width: 700px;
     height: 354px;
     border: solid;
 }
 
-#pokemon{
+#pokemon {
     position: absolute;
     background-repeat: no-repeat;
     left: 50px;
@@ -14,9 +14,10 @@
     height: 250px;
     width: 250px;
     background-position: center, center;
+    transform: scaleX(-1);
 }
 
-#pokemon2{
+#pokemon2 {
     background-size: 180px 180px;
     background-repeat: no-repeat;
     position: absolute;
@@ -28,20 +29,9 @@
     background-position: center, center;
 }
 
-/*#barra{
+#barra {
     background-image: url('../images/barra.png');
-    
-    position: absolute;
-    height: 120px;
-    width: 300px;
-    margin-top: 300px;
-    margin-left: 150px;
-    opacity: 80%;
-    z-index: 1;
-}*/
-#barra{
-    background-image: url('../images/barra.png');
-    
+
     position: absolute;
     height: 120px;
     width: 300px;
@@ -51,7 +41,7 @@
     /*z-index: 0;*/
 }
 
-#atk{
+#atk {
     position: absolute;
     left: 60px;
     top: 30px;
@@ -59,7 +49,8 @@
     width: 50px;
     background-image: url('../images/atk-50.png');
 }
-#def{
+
+#def {
     position: absolute;
     left: 140px;
     top: 30px;
@@ -67,7 +58,8 @@
     width: 50px;
     background-image: url('../images/shield-50.png');
 }
-#spe{
+
+#spe {
     position: absolute;
     left: 210px;
     top: 30px;
@@ -75,38 +67,43 @@
     width: 50px;
     background-image: url('../images/speed-55R.png');
 }
-@keyframes ataque{
-    0%{
-       left: 30px;
-       top: 150px; 
+
+@keyframes ataque {
+    0% {
+        left: 30px;
+        top: 150px;
     }
-    50%{
+
+    50% {
         left: 300px;
         top: 45px;
         background-size: 180px 180px;
     }
-    100%{
+
+    100% {
         left: 30px;
         top: 150px;
     }
 }
+
 @keyframes balanco {
 
-    0%{
+    0% {
         top: 0;
     }
-    50%{
+
+    50% {
         top: 5px;
     }
-    100%{
+
+    100% {
         top: 0;
     }
 
 
-  }
+}
 
 
 .balanco {
     animation: balanco 1s infinite;
 }
-  
