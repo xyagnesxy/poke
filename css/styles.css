@@ -7,8 +7,9 @@
 
 #pokemon{
     position: absolute;
-    left: 30px;
-    top: 150px;
+    background-repeat: no-repeat;
+    left: 50px;
+    top: 120px;
     border: solid;
     height: 250px;
     width: 250px;
@@ -27,7 +28,7 @@
     background-position: center, center;
 }
 
-#barra{
+/*#barra{
     background-image: url('../images/barra.png');
     
     position: absolute;
@@ -37,7 +38,19 @@
     margin-left: 150px;
     opacity: 80%;
     z-index: 1;
+}*/
+#barra{
+    background-image: url('../images/barra.png');
+    
+    position: absolute;
+    height: 120px;
+    width: 300px;
+    margin-top: 280px;
+    margin-left: 390px;
+    /*opacity: 80%;*/
+    /*z-index: 0;*/
 }
+
 #atk{
     position: absolute;
     left: 60px;
@@ -54,7 +67,29 @@
     width: 50px;
     background-image: url('../images/shield-50.png');
 }
-
+#spe{
+    position: absolute;
+    left: 210px;
+    top: 30px;
+    height: 50px;
+    width: 50px;
+    background-image: url('../images/speed-55R.png');
+}
+@keyframes ataque{
+    0%{
+       left: 30px;
+       top: 150px; 
+    }
+    50%{
+        left: 300px;
+        top: 45px;
+        background-size: 180px 180px;
+    }
+    100%{
+        left: 30px;
+        top: 150px;
+    }
+}
 @keyframes balanco {
 
     0%{
@@ -69,8 +104,9 @@
 
 
   }
-  
-  .balanco {
+
+
+.balanco {
     animation: balanco 1s infinite;
-  }
+}
   

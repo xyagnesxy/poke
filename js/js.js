@@ -1,19 +1,28 @@
 const btnAtk = document.getElementById('atk')
 const btnDef = document.getElementById('def')
-import lista from '../lista.js'
+const btnSpe = document.getElementById('spe')
+import lista from './lista.js'
 const pokemons = lista['pokemons']
 var player1, player2
 
-function lutar(pok1, pok2, atributo){
+function lutar(atributo){
     
+    document.getElementById('pokemon').style.animation="ataque 1s normal"
+    setTimeout(()=>{
+        document.getElementById('pokemon').style.animation=''
+    },1000)
   try{
     if(player1[atributo]>player2[atributo]){
         console.log("pok1 ganha")
-        return 1
+        alert(`O pokemon ${player1}`)
        
-    }else{
+    }else if(player1[atributo]==player2[atributo]){
+        alert("Deu empate")
+    }
+    
+    else{
         console.log("pok2 ganha")
-        return 2
+        alert(`O pokemon ${player2}`)
   
     }
   }
@@ -56,7 +65,9 @@ btnAtk.addEventListener('click',()=>{
 btnDef.addEventListener('click', ()=>{
     lutar(player1, player2, 'def')
 })
-
+btnSpe.addEventListener('click', ()=>{
+    lutar(player1, player2, 'spe')
+})
 
 
 draw('pokemon', 'bulbasaur')
