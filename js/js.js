@@ -13,11 +13,11 @@ function lutar(atributo){
   try{
     if(player1[atributo]>player2[atributo]){
         console.log("pok1 ganha")
-        return 1
+        
        
     }else{
         console.log("pok2 ganha")
-        return 2
+        
   
     }
   }
