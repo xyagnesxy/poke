@@ -1,11 +1,15 @@
 const btnAtk = document.getElementById('atk')
 const btnDef = document.getElementById('def')
-import lista from '../lista.js'
+import lista from './lista.js'
 const pokemons = lista['pokemons']
 var player1, player2
 
-function lutar(pok1, pok2, atributo){
+function lutar(atributo){
     
+    document.getElementById('pokemon').style.animation="ataque 1s normal"
+    setTimeout(()=>{
+        document.getElementById('pokemon').style.animation=''
+    },1000)
   try{
     if(player1[atributo]>player2[atributo]){
         console.log("pok1 ganha")
@@ -60,3 +64,4 @@ btnDef.addEventListener('click', ()=>{
 
 
 draw('pokemon', 'bulbasaur')
+draw('pokemon2', 'bulbasaur')
