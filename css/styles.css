@@ -6,6 +6,7 @@
 }
 
 #pokemon{
+    background-size: 250px 250px;
     position: absolute;
     background-repeat: no-repeat;
     left: 50px;

@@ -11,8 +11,7 @@ function lutar(atributo){
     setTimeout(()=>{
         document.getElementById('pokemon').style.animation=''
     },1000)
-  console.log(player1[atributo])
-  console.log(player2[atributo])
+   
     try{
     if(player1[atributo]>player2[atributo]){
         console.log("pok1 ganha")
@@ -72,5 +71,5 @@ btnSpe.addEventListener('click', ()=>{
 })
 
 
-draw('pokemon', 'pikachu')
-draw('pokemon2', 'squirtle')
+draw('pokemon', 'bulbasaur')
+draw('pokemon2', 'pikachu')

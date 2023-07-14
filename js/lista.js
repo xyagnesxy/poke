@@ -12,9 +12,7 @@ export default
                     "spe": 10,
                     "type": "grass",
                     "img": "/images/bulbasaur2.png"
-                },
-                
-            
+                }, 
             
                 "charmander":{
                     "name": "charmander",
@@ -25,9 +23,7 @@ export default
                     "type": "fire",
                     "img": "/images/charmander.png"
                 },
-               
-            
-             
+                                    
                 "squirtle":{
                     "name": "squirtle",
                     "hp": 44,
@@ -46,11 +42,18 @@ export default
                     "spe":102,
                     "type":"eletric",
                     "img":"/images/pikachu.png"
-                }
-            
-        
-        
+                },
+                
+                "meouth":{
+                    "name": "meouth",
+                    "hp": 100,
+                    "atk":70,
+                    "def":40,
+                    "spe":10,
+                    "type":"normal",
+                    "img":"/images/meouth.png"
+                },
+                
     
-
             }
         }
