@@ -10,7 +10,6 @@
     background-repeat: no-repeat;
     left: 50px;
     top: 120px;
-    border: solid;
     height: 250px;
     width: 250px;
     background-position: center, center;
@@ -23,7 +22,6 @@
     position: absolute;
     left: 400px;
     margin-top: 10px;
-    border: solid;
     height: 250px;
     width: 250px;
     background-position: center, center;
@@ -107,3 +105,29 @@
 .balanco {
     animation: balanco 1s infinite;
 }
+
+
+
+.explosion {
+    top: 60px;
+    left: 480px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-image: url('../images/impacto-100.png');
+    /* Adicione a imagem da explosão como plano de fundo */
+    animation: explode 0.5s linear forwards;
+    background-position: center center;
+    z-index: 1;
+  }
+  
+  @keyframes explode {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
