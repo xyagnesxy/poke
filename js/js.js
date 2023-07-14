@@ -70,5 +70,5 @@ btnSpe.addEventListener('click', ()=>{
 })
 
 
-draw('pokemon', 'bulbasaur')
+draw('pokemon', 'pikachu')
 draw('pokemon2', 'bulbasaur')
