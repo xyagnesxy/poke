@@ -5,7 +5,8 @@
     border: solid;
 }
 
-#pokemon {
+#pokemon{
+    background-size: 250px 250px;
     position: absolute;
     background-repeat: no-repeat;
     left: 50px;
@@ -68,8 +69,8 @@
 
 @keyframes ataque {
     0% {
-        left: 30px;
-        top: 150px;
+        left: 50px;
+        top: 120px;
     }
 
     50% {
@@ -79,8 +80,8 @@
     }
 
     100% {
-        left: 30px;
-        top: 150px;
+        left: 50px;
+        top: 120px;
     }
 }
 
