@@ -10,13 +10,19 @@ export default
                     "atk": 49,
                     "def": 49,
                     "spe": 10,
+                    "atk": 49,
+                    "def": 49,
+                    "spe": 10,
                     "type": "grass",
-                    "img": "/images/bulbasaur2.png"
-                }, 
+                    "img": "/images/bulbasaur.png"
+                },
             
                 "charmander":{
                     "name": "charmander",
                     "hp": 39,
+                    "atk": 52,
+                    "def": 43,
+                    "spe": 65,
                     "atk": 52,
                     "def": 43,
                     "spe": 65,
@@ -27,6 +33,9 @@ export default
                 "squirtle":{
                     "name": "squirtle",
                     "hp": 44,
+                    "atk": 48,
+                    "def": 65,
+                    "spe": 43,
                     "atk": 48,
                     "def": 65,
                     "spe": 43,
