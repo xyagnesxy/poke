@@ -110,11 +110,11 @@
 
 
 .explosion {
-    top: 60px;
-    left: 480px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
     width: 100px;
     height: 100px;
-    position: absolute;
     background-image: url('../images/impacto-100.png');
     /* Adicione a imagem da explosão como plano de fundo */
     animation: explode 0.5s linear forwards;
@@ -122,6 +122,11 @@
     z-index: 1;
   }
   
+  .hidden
+  {
+    display: none;
+  }
+
   @keyframes explode {
     0% {
       transform: scale(0);
