@@ -1,0 +1,19 @@
+
+form{
+    border: solid;
+    height: 500px;
+    width: 100%;
+}
+.grande{
+background-color: aqua;
+border:solid 10px;
+width: 25%;
+height: 80%;
+
+}
+.selector{
+    height: 80px;
+    width: 60px;
+    border: solid 1px;
+    display: block;
+}
