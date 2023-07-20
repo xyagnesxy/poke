@@ -1,0 +1,54 @@
+
+.menu{
+    border: solid;
+    width: 60%;
+    height: 80%;
+    margin-left: 5%;
+    padding: 0;
+    font-size: 0/*osso remove o espaçamento aplicado a elemenyos inline*/;
+}
+.quadro{
+    border: solid;
+    width: 25%;
+    height: 80%;
+}
+.foto{
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+form{
+    padding: 10px;
+    border: solid;
+    
+    height: 600px;
+    display: flex;
+}
+.caixa{
+    background-color: rgb(15, 126, 134);
+    height: 140px;
+    width: 140px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0;    
+    
+}
+.mini-foto{
+    background-color: rgb(202, 231, 233);
+    height: 100px;
+    width: 100px;
+    margin: 0;
+    background-size: 100px 100px;
+    transition: all 0.3s;
+}
+
+.mini-foto:hover{
+    background-color: rgb(202, 231, 233);
+    scale: 1.4;
+
+    
+}
