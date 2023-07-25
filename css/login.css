@@ -3,17 +3,33 @@ form{
     border: solid;
     height: 500px;
     width: 100%;
+    display: inline-flex;
+    background-image: url("../images/form.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
 }
-.grande{
-background-color: aqua;
+.personagem{
+background-color: ;
 border:solid 10px;
-width: 25%;
+width: 20%;
+max-width: 300px;
 height: 80%;
+align-items: center;
+
+
 
 }
 .selector{
+    background-color: rgb(217, 255, 0);
     height: 80px;
     width: 60px;
     border: solid 1px;
-    display: block;
+      
 }
+img{
+    width: 100%;
+     
+    
+}
+
