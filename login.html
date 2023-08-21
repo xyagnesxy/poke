@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,29 +9,33 @@
     <script src="login.js"></script>
     <title>Pokemon</title>
 </head>
+
 <body>
     <form>
-    <div class="personagem"> 
-        <img src="" alt="" id="pkm">
+        <div class="personagem">
+            <img src="" alt="" id="pkm">
+        </div>
+
+        <div class="menu">
+            <div class="selector"> <img src="./images/bulbasaur.png" onmouseenter="mostrarpkm('bulbasaurteste.png', 'bulbasaur-fundo.png')" onclick="selecionar(this, 'bulbasaur')"></div>
+            <div class="selector"><img src="./images/charmander.png" onmouseenter="mostrarpkm('charmanderteste.png', 'fogo-fundo.png')" onclick="selecionar(this, 'charmander')"></div>
+            <div class="selector"><img src="./images/squirtle.png" onmouseenter="mostrarpkm('squirtleteste.png', 'squirtle-fundo.png')" onclick="selecionar(this, 'squirtle')"></div>
+            <div class="selector"><img src="./images/25_Pikachu_shiny.gif" onmouseenter="mostrarpkm('pikachuteste2.png', 'pikachu-fundo.png')" onclick="selecionar(this, 'pikachu')">
+            </div>
+            <div class="selector"><img src="./images/jigglypuff.gif" onmouseenter="mostrarpkm('jigglypuff.png', 'jiglypuff-fundo3.png')" onclick="selecionar(this, 'jigglypuff')"></div>
+            <div class="selector"><img src="./images/meouth.png" onmouseenter="mostrarpkm('meouth.png','meowth-fundo.png')" onclick="selecionar(this, 'meouth')"></div>      
+            <div class="selector"><img src="./images/gastly.png" onmouseenter="mostrarpkm('gastly.png', 'gastly-fundo.png')" onclick="selecionar(this, 'gastly')"></div>    
+            <div class="selector"><img src="./images/eevee.png" onmouseenter="mostrarpkm('eevee.png', 'eevee-fundo2.jpg')" onclick="selecionar(this, 'eevee')"></div>
+            <div class="selector"><img src="./images/snorlaxx.jpg" onmouseenter="mostrarpkm('snorlax-atk.png', 'snorlax-fundo2.png')" onclick="selecionar(this, 'snorlax')"></div>
+            <div class="selector"><img src="./images/totodile.png" onmouseenter="mostrarpkm('totodileteste.png', 'totodile-fundo.png')" onclick="selecionar(this, 'totodile')"></div>
     </div>
 
-   
-    <div class="selector"><img src="./images/25_Pikachu_shiny.gif" onmouseenter="mostrarpkm('pikachuteste2.png')" ></div>
-    <div class="selector"> <img src="./images/bulbasaur.png" onmouseenter="mostrarpkm('bulbasaurteste.png')"></div>
-    <div class="selector"><img src="./images/snorlaxx.jpg" onmouseenter="mostrarpkm('snorlax-atk.gif')"></div>
-    <div class="selector"><img src="./images/meouth.png" onmouseenter="mostrarpkm('meouth-atk.gif')"></div>
-    <div class="selector"><img src="./images/squirtle.png" onmouseenter="mostrarpkm('squirtleteste.png')"></div>
-    <div class="selector"><img src="./images/charmander.png" onmouseenter="mostrarpkm('charmanderteste.png')"></div>
-    <div class="selector"><img src="./images/jiglypuff.png" onmouseenter="mostrarpkm('jigglypuff.atk.webp')"></div>
-    <div class="selector"><img src="./images/eevee.png" onmouseenter="mostrarpkm('eevee-atk.gif')"></div>
-    <div class="selector"><img src="./images/totodile.png" onmouseenter="mostrarpkm('totodileteste.png')"></div>
+    </form>
+    <div>
+        <input id="treinadorNome" type="text" placeholder="Treinador" style="text-align: center;" />
+        <button class="acesso" onclick="login()">Login</button>
+    </div>
     
-    
-</form>
-
-<div>
-    <input type="text" placeholder="Treinador" style="text-align: center;"/>
-    <button class="acesso" onclick="">Login</button>
-</div>
 </body>
+
 </html>
