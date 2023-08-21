@@ -85,3 +85,4 @@ function explode(){
     explosion.classList.add('explosion')
     setTimeout(() => explosion.classList.add('hidden'), 500)
 }
+
