@@ -16,7 +16,7 @@ function lutar(atributo) {
 
         if (player1[atributo] > player2[atributo]) {
             console.log("pok1 ganha")
-            //alert(`O pokemon ${player1['name']}`)
+            alert(`O pokemon ${player1['name']} ganhou`)
 
         } else if (player1[atributo] == player2[atributo]) {
             alert("Deu empate")
@@ -24,7 +24,7 @@ function lutar(atributo) {
 
         else {
             console.log("pok2 ganha")
-            alert(`O pokemon ${player2['name']}`)
+            alert(`O pokemon ${player2['name']} ganhou`)
 
         }
     }, 1000)
@@ -73,7 +73,7 @@ btnSpe.addEventListener('click', () => {
 })
 
 
-draw('pokemon', 'charmander')
+draw('pokemon', window.localStorage.pokemon)
 draw('pokemon2', 'bulbasaur')
 
 const explosion = document.createElement('div');
@@ -82,7 +82,7 @@ const pokemon2 = document.getElementById('pokemon2');
 pokemon2.appendChild(explosion)
 
 function explode(){
-    console.log('teste', pokemon2)
     explosion.classList.add('explosion')
     setTimeout(() => explosion.classList.add('hidden'), 500)
 }
+
