@@ -5,8 +5,15 @@ import lista from './lista.js'
 const pokemons = lista['pokemons']
 var player1, player2
 
+draw('pokemon', window.localStorage.pokemon)
+draw('pokemon2', 'bulbasaur')
+
+const explosion = document.createElement('div');
+const pokemon2 = document.getElementById('pokemon2');
+pokemon2.appendChild(explosion)
+
 function lutar(atributo) {
-    
+    explode()
     
     document.getElementById('pokemon').style.animation = "ataque 1s normal"
 
@@ -52,6 +59,7 @@ function draw(lugar, pokemon) {
     let pok1 = document.createElement('div')
     pok1.id = lugar
     let url = pokemons[pokemon]['img']
+    
 
       pok1.style.backgroundImage = "url("+url+")"
     document.querySelector('.tela-luta').appendChild(pok1)
@@ -62,7 +70,7 @@ function draw(lugar, pokemon) {
 
 
 btnAtk.addEventListener('click', () => {
-
+    
     lutar('atk')
 })
 btnDef.addEventListener('click', () => {
@@ -72,17 +80,16 @@ btnSpe.addEventListener('click', () => {
     lutar('spe')
 })
 
+   
 
-draw('pokemon', window.localStorage.pokemon)
-draw('pokemon2', 'bulbasaur')
 
-const explosion = document.createElement('div');
-const pokemon2 = document.getElementById('pokemon2');
 
-pokemon2.appendChild(explosion)
+
+
 
 function explode(){
     explosion.classList.add('explosion')
-    setTimeout(() => explosion.classList.add('hidden'), 500)
+    setTimeout(() => explosion.classList.remove('explosion'), 500)
+    
 }
 

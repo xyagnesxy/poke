@@ -11,7 +11,7 @@ export default
                     "def": 49,
                     "spe": 10,
                     "type": "grass",
-                    "img": "/images/bulbasaur.png"
+                    "img": "../images/bulbasaur.png"
                 },
             
                 "charmander":{
@@ -21,7 +21,7 @@ export default
                     "def": 43,
                     "spe": 65,                    
                     "type": "fire",
-                    "img": "/images/charmander.png"
+                    "img": "../images/charmander.png"
                 },
                                     
                 "squirtle":{
@@ -31,7 +31,7 @@ export default
                     "def": 65,
                     "spe": 43,
                     "type": "water",
-                    "img": "/images/squirtle.png"
+                    "img": "../images/squirtle.png"
                 },
                 
                 "pikachu":{
@@ -41,7 +41,7 @@ export default
                     "def":80,
                     "spe":102,
                     "type":"eletric",
-                    "img":"/images/pikachu.png"
+                    "img":"../images/pikachu.png"
                 },
                 
                 "meouth":{
@@ -51,7 +51,7 @@ export default
                     "def":40,
                     "spe":10,
                     "type":"normal",
-                    "img":"/images/meouth.png"
+                    "img":"../images/meouth.png"
                 },
                 "snorlax":{
                     "name": "snorlax",
@@ -60,7 +60,7 @@ export default
                     "def": 65,
                     "spe": 30,
                     "type": "normal",
-                    "img": "/images/snorlaxx.jpg"
+                    "img": "../images/snorlaxx.jpg"
                 },
                 "eevee":{
                     "name": "eevee",
@@ -69,7 +69,7 @@ export default
                     "def": 50,
                     "spe": 55,
                     "type": "normal",
-                    "img": "/images/eevee.png"
+                    "img": "../images/eevee.png"
                 },
                 "totodile":{
                     "name": "totodile",
@@ -78,7 +78,7 @@ export default
                     "def": 64,
                     "spe": 43,
                     "type": "water",
-                    "img": "/images/totodile2.png"
+                    "img": "../images/totodile2.png"
                 },
                 "jigglypuff":{
                     "name": "jigglypuff",
@@ -87,7 +87,7 @@ export default
                     "def": 20,
                     "spe": 20,
                     "type": "normal",
-                    "img": "/images/jigglypuff.png"
+                    "img": "../images/jigglypuff.png"
                 },
                 "gastly":{
                     "name": "gastly",
@@ -96,7 +96,7 @@ export default
                     "def": 30,
                     "spe": 80,
                     "type": "ghost",
-                    "img": "/images/gastly.png"
+                    "img": "../images/gastly.png"
 
                 }
                 

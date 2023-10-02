@@ -1,0 +1,30 @@
+/* Defina a animação */
+@keyframes ataqueAquatico {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+  }
+  
+  /* Aplique a animação a um elemento, por exemplo, um div com a classe "onda" */
+  .onda {
+    width: 100px;
+    height: 100px;
+    background-color: blue; /* Cor da água */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: ataqueAquatico 1s ease-in-out; /* Nome da animação e duração */
+    animation-iteration-count: 1; /* Número de repetições (1 para reproduzir uma vez) */
+    animation-fill-mode: forwards; /* Mantém o estado final da animação */
+  }
+  

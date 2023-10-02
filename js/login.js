@@ -10,7 +10,7 @@ function login(){
     }
     else{
         localStorage.treinador = treinador
-        window.location.assign('./index.html')
+        window.location.assign('./html/index.html')
     }
 }
 
