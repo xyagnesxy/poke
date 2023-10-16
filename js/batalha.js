@@ -8,24 +8,25 @@ var player1, player2
 draw('pokemon', window.localStorage.pokemon)
 draw('pokemon2', 'bulbasaur')
 
-const explosion = document.createElement('div');
-const pokemon2 = document.getElementById('pokemon2');
-pokemon2.appendChild(explosion)
+const explosion = document.createElement('div');//div pendurada no inimigo
+const inimigo = document.getElementById('pokemon2');
+inimigo.appendChild(explosion)
 
 function lutar(atributo) {
-    explode()
+    explode(150)
     
     document.getElementById('pokemon').style.animation = "ataque 1s normal"
 
     setTimeout(() => {
         document.getElementById('pokemon').style.animation = ''
-        explode()
+        //explode()
 
         if (player1[atributo] > player2[atributo]) {
             console.log("pok1 ganha")
             alert(`O pokemon ${player1['name']} ganhou`)
 
         } else if (player1[atributo] == player2[atributo]) {
+            console.log("empate")
             alert("Deu empate")
         }
 
@@ -87,9 +88,14 @@ btnSpe.addEventListener('click', () => {
 
 
 
-function explode(){
-    explosion.classList.add('explosion')
-    setTimeout(() => explosion.classList.remove('explosion'), 500)
+function explode(delay){
+
+    setTimeout(()=>{
+        explosion.classList.add('explosion')
+        setTimeout(() => explosion.classList.remove('explosion'), 500)
+    }, delay)
+    
+    
     
 }
 

@@ -14,11 +14,11 @@ function login(){
     }
 }
 
-function selecionar(x, pokemon){
+function selecionar(clicado, pokemon){
    
     if(document.querySelector('.selecionado')){
         document.querySelector('.selecionado').classList.remove('selecionado')
     }
-    x.classList.add('selecionado')
+    clicado.classList.add('selecionado')
     localStorage.pokemon=pokemon
 }
