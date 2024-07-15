@@ -25,7 +25,7 @@ function lutar(atributo) {
             console.log("pok1 ganha")
             alert(`O pokemon ${player1['name']} ganhou`)
 
-        } else if (player1[atributo] == player2[atributo]) {
+        } else if (player1[atributo] === player2[atributo]) {
             console.log("empate")
             alert("Deu empate")
         }
@@ -50,7 +50,7 @@ function draw(lugar, pokemon) {
     if (document.getElementById(lugar)) {//verifica se já tem uma div lá
         document.querySelector('.tela-luta').removeChild(document.getElementById(lugar))
     }
-    if (lugar == 'pokemon') {
+    if (lugar === 'pokemon') {
         player1 = pokemons[pokemon]
     } else {
         player2 = pokemons[pokemon]
