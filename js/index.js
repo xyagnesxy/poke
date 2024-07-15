@@ -5,7 +5,7 @@ function mostrarpkm(pokemonfoto, fundo){
 
 function login(){
     let treinador = document.getElementById('treinadorNome').value
-    if(treinador=='' || localStorage.pokemon==null){
+    if(treinador==='' || localStorage.pokemon===null){
         console.log('sem pokemons ou treinador')
     }
     else{
